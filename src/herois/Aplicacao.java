@@ -1,6 +1,7 @@
 package herois;
 
 import herois.cli.Display;
+import herois.exception.OpcaoInvalidaEsception;
 import herois.model.Opcao;
 import herois.model.Personagem;
 import herois.model.Vilao;
@@ -22,7 +23,7 @@ public class Aplicacao {
             try {
                 opcao = Opcao.converter(codigo);
                 processar(opcao);
-            }catch (IllegalArgumentException e){
+            }catch (OpcaoInvalidaEsception e){
                 display.exibirMensagem( e.getMessage());
             }
         }while (opcao != Opcao.SAIR);
