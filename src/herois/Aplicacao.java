@@ -3,7 +3,10 @@ package herois;
 import herois.cli.Display;
 import herois.model.Opcao;
 import herois.model.Personagem;
+import herois.model.Vilao;
 import herois.repository.PersonagemRepository;
+
+import java.util.List;
 
 public class Aplicacao {
 
@@ -32,7 +35,12 @@ public class Aplicacao {
         if (opcao == Opcao.CADASTRAR_HEROI){
             Personagem heroi = display.obterDadosHeroi();
             personagemRepo.inserir(heroi);
-
+        } else if (opcao == Opcao.CADASTRAR_VILAO){
+            Vilao vilao = display.obterDadosVilao();
+            personagemRepo.inserir(vilao);
+        } else if (opcao == Opcao.LISTAR) {
+            List<Personagem> personagens = personagemRepo.listar();
+            display.listar(personagens);
         }
     }
 }

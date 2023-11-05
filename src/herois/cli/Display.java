@@ -1,8 +1,11 @@
 package herois.cli;
 
 import herois.model.Heroi;
+import herois.model.Personagem;
+import herois.model.Vilao;
 
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 public class Display {
@@ -45,5 +48,22 @@ public class Display {
         String nomeVidaReal = scanner.nextLine();
         return new Heroi(nome, superpoder, nomeVidaReal);
 
+    }
+
+    public Vilao obterDadosVilao() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Informe um nome");
+        String nome = scanner.nextLine();
+        System.out.println("Informe o superpoder");
+        String superpoder = scanner.nextLine();
+        System.out.println("Informe o tempo de prisão");
+        int tempoPrisao = scanner.nextInt();
+        return new Vilao(nome, superpoder, tempoPrisao);
+    }
+
+    public void listar(List<Personagem> personagens) {
+        System.out.println("Listando...");
+        personagens.forEach(System.out::println);
+        System.out.println();
     }
 }
