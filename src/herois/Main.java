@@ -1,4 +1,4 @@
-package herois_parte4;
+package herois;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package herois_parte4.model;
+package herois.model;
 
 public abstract class Personagem {
 
     private String nome;
-    private String superPoder;
+    private String superpoder;
 
     public String getNome() {
         return nome;
@@ -13,11 +13,11 @@ public abstract class Personagem {
         this.nome = nome;
     }
 
-    public String getSuperPoder() {
-        return superPoder;
+    public String getSuperpoder() {
+        return superpoder;
     }
 
-    public void setSuperPoder(String superPoder) {
-        this.superPoder = superPoder;
+    public void setSuperpoder(String superpoder) {
+        this.superpoder = superpoder;
     }
 }

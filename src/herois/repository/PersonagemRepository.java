@@ -1,8 +1,9 @@
-package herois_parte4.repository;
+package herois.repository;
 
-import herois_parte2.model.Personagem;
+import herois.model.Personagem;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 public class PersonagemRepository {
     private List<Personagem> personagens = new ArrayList<>();
 

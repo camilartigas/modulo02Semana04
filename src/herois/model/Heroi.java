@@ -1,12 +1,12 @@
-package herois_parte4.model;
+package herois.model;
 
 public class Heroi extends Personagem {
 
     private String nomeVidaReal;
 
-    public Heroi(String nome, String superPoder, String nomeVidaReal) {
+    public Heroi(String nome, String superpoder, String nomeVidaReal) {
         this.setNome(nome);
-        this.setSuperPoder(superPoder);
+        this.setSuperpoder(superpoder);
         this.nomeVidaReal = nomeVidaReal;
     }
 

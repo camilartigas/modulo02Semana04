@@ -1,9 +1,9 @@
-package herois_parte4;
+package herois;
 
-import herois_parte4.cli.Display;
-import herois_parte4.model.Heroi;
-import herois_parte4.model.Opcao;
-import herois_parte4.repository.PersonagemRepository;
+import herois.cli.Display;
+import herois.model.Opcao;
+import herois.model.Personagem;
+import herois.repository.PersonagemRepository;
 
 public class Aplicacao {
 
@@ -30,8 +30,8 @@ public class Aplicacao {
         if (opcao == Opcao.SAIR)
             return;
         if (opcao == Opcao.CADASTRAR_HEROI){
-            Heroi heroi = display.obterDadosHeroi();
-            personagemRepo.inserir();
+            Personagem heroi = display.obterDadosHeroi();
+            personagemRepo.inserir(heroi);
 
         }
     }

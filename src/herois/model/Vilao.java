@@ -1,12 +1,12 @@
-package herois_parte4.model;
+package herois.model;
 
 public class Vilao extends Personagem {
 
     private Integer tempoDePrisao;
 
-    public Vilao(String nome, String superPoder, Integer tempoDePrisao) {
+    public Vilao(String nome, String superpoder, Integer tempoDePrisao) {
         this.setNome(nome);
-        this.setSuperPoder(superPoder);
+        this.setSuperpoder(superpoder);
         this.tempoDePrisao = tempoDePrisao;
     }
 

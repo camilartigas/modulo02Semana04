@@ -1,6 +1,6 @@
-package herois_parte4.cli;
+package herois.cli;
 
-import herois_parte4.model.Heroi;
+import herois.model.Heroi;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -40,10 +40,10 @@ public class Display {
         System.out.println("Informe um nome");
         String nome = scanner.nextLine();
         System.out.println("Informe o superpoder");
-        String superPoder = scanner.nextLine();
+        String superpoder = scanner.nextLine();
         System.out.println("Informe nome real");
         String nomeVidaReal = scanner.nextLine();
-        return new Heroi(nome, superPoder, nomeVidaReal);
+        return new Heroi(nome, superpoder, nomeVidaReal);
 
     }
 }

@@ -1,4 +1,4 @@
-package herois_parte4.model;
+package herois.model;
 
 public enum Opcao {
     CADASTRAR_HEROI,
